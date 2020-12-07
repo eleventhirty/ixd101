@@ -10,8 +10,6 @@ section {
   max-width: 800px;
   margin: auto;}
 
-
-
 h1, h2, h3 {
   font-family: bely-display, sans-serif;
   font-weight: 400;
@@ -92,12 +90,17 @@ li {
   color: #fff
 }
 
-/*---------------- BACKGROUNDS ----------------*/
-.background-colour {
-    padding: 4em 0;
-    background: #103254;
-    color: #fafafa;}
+/*---------------- BACKGROUNDS ----------------*/ 
+.top-dark {
+    padding: 3em 0;
+    background: #103254 url('../img/bokeh.png') repeat;
+    /* Photo by Joyce Romero on Unsplash */
+    color: #fafafa; }
 
+.dark {
+      padding: 3em 0;
+      background: #103254;
+      color: #fafafa; }
 
 /*--------------------- STYLING LINKS -----------------*/
 a {
@@ -118,11 +121,11 @@ a:hover {
     color: #103254;
 }
   
-.background-colour a {
+.dark a {
   color: rgb(150, 230, 254);
   text-decoration: none;}
 
-.background-colour a:hover {
+.dark a:hover {
   color: #fafafa;
   border-bottom: 1px dotted;}
 
@@ -241,8 +244,23 @@ header {
 header h1 {font-size: 3.25em;}
 header p {font-size: 1.25em;}
 
-/* .portfolio {grid-template-columns: repeat(2, minmax(150px, 1fr)); }*/
+.portfolio {grid-template-columns: repeat(2, minmax(150px, 1fr)); }
 
+nav {
+  padding: 0.5em;
+}
+
+.logo {
+ 
+  text-align: center;
+  padding-right: 0;
+}
+
+
+nav ul li {
+  display: block;
+  margin: 10px;
+  background: none;}
 }
 
 
