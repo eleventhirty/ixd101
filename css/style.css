@@ -46,21 +46,21 @@ header h2 {
 }
 .highlight {color: #439ff6}
 
-.pink {color: #439ff6}
-
 /*---------------- PORTFOLIO SECTION ------------------*/
 
 .portfolio h2 { max-width: 960px; margin: 3em auto;}
 .portfolio{
   max-width: 800px;
   margin: auto;
-  padding: 40px 0;
-  display: grid;
+  padding: 40px 0; 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
+  
   grid-gap: 10px;
-  /* grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(100px auto); */
-
-grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ; 
+  /* 
+  grid-auto-rows: minmax(100px auto); 
+  grid-template-columns: repeat(3, 1fr);
+ */
 }
  
 .portfolio h1 {
@@ -244,8 +244,8 @@ header {
 
 header h1 {font-size: 3.25em;}
 header p {font-size: 1.25em;}
-
-.portfolio {grid-template-columns: repeat(2, minmax(150px, 1fr)); }
+/*
+.portfolio {grid-template-columns: repeat(2, minmax(150px, 1fr)); } */
 
 nav {
   padding: 0.5em;
